@@ -25,6 +25,12 @@ main {
 
 }
 
+/* canvas {
+  display: inline-block;
+  position: static;
+  padding: 10px;
+} */
+
 .padded {
     padding: 2rem 2rem;
 }

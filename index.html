@@ -15,7 +15,10 @@ hedding but I disagree based on the way I am using it. -->
 	<!-- Makes the font larger on phones and smaller on computers -->
 	<script src="font.js"></script>
 	<script src="theme.js"></script>
-	<!-- Set the tab title in browser -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="boid.js"></script>
+  <!-- Set the tab title in browser -->
 	<title>Computer Science and Machine Learning Club</title>
 </head>
 
@@ -61,6 +64,28 @@ hedding but I disagree based on the way I am using it. -->
 			</p>
 		</section>
 
+    <section>
+			<sh>
+				Create Visualizations
+			</sh>
+      <br>
+      <br>
+      <div id="boid-sketch"></div>
+    </section>
+
+    <section>
+			<sh>
+				Create Neural Networks
+			</sh>
+      <br>
+      <br>
+      <img src="Images/ae-labled-vis.png" style="width:80%;padding-bottom:1rem;" alt="Picture of autoencoder disign">
+      <!-- <video width="80%" height="auto" controls>
+        <source src="videos/mnist-ae-sneakpeak.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
+    </section>
+
 		<section>
 			<sh>
 				Tech Talks
@@ -85,33 +110,8 @@ hedding but I disagree based on the way I am using it. -->
         through bragging to your parents.
       </p>
     </section>
-    <section>
-			<sh>
-				Cool Stuff Happening Right Now
-			</sh>
-      <br>
-      <br>
-      <p>
-        Recentaly Linus built an auto encoder that distills pictures of number 
-        down to three number before creating recreations.
-      </p>
-      <p>
-        What is an autoencoder? It is a neural network that takes an input, simplifies it, then recreates it. (If you don’t know what a neural network is we will walk you through it)
-      </p>
-      <img src="Images/ae-labled-vis.png" style="width:100%;padding-bottom:1rem;" alt="Picture of autoencoder disign">
-      <p>
-         An autoencoder starts to get useful when you split up the halves. 
-         For example you could distil an image down into just three numbers 
-         then reconstruct it from scratch. This would allow you to transmit 
-         three numbers instead of a 28 X 28 grid. You can see this in action 
-         in the video below. If you want to learn how to do cool things 
-         like this get in contact.
-      </p>
-      <video width="80%" height="auto" controls>
-        <source src="videos/mnist-ae-sneakpeak.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
+    
+
     <a id="Join-now">
       <section>
         <br>
