@@ -434,13 +434,18 @@ let show = false;
 // let alignSlider, cohesionSlider, separationSlider, avoidSlider;
 
 function setup() {
+  print(windowWidth, windowHeight)
   angleMode(DEGREES);
   cnv = createCanvas(700, 600);
   cnv.parent("boid-sketch");
-  // cnv.position(100, 200);
-  print(cnv.parent.innerText);
-  cnv.mouseOver(() => mouseIn = true);
-  cnv.mouseOut(() => mouseIn = false);
+  cnv.mouseOver(() => {
+    mouseIn = true;
+    disableScroll();
+  });
+  cnv.mouseOut(() => {
+    mouseIn = false
+    enableScroll();
+  });
 
   if(optimized) {
     boundary = new Rectangle(width / 2, height / 2, width / 2, height / 2);
@@ -528,6 +533,29 @@ function draw() {
 
 mouseClicked = function() {
   if(mouseIn) show = !show;
+}
+
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+// var supportsPassive = false;
+// try {
+//   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+//     get: function () { supportsPassive = true; } 
+//   }));
+// } catch(e) {}
+
+var wheelOpt = {passive: false};//supportsPassive ? { passive: false } : false;
+
+function disableScroll() {
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
 }
 
 

@@ -12,12 +12,16 @@
 
 section {
     padding: 1rem 2rem 1rem 2rem;
+    display: block;
+    background-color: #ffffff;
 }
 
 body {
     text-align: center;
     font-weight: 400;
     line-height: 1.4;
+    /* background-image:  url("Images/purplemaze.png");
+    background-attachment: fixed; */
 }
 
 main {
@@ -45,6 +49,21 @@ header {
 sh {
     font-family: 'Montserrat', sans-serif;
     font-size: 18pt;
+}
+
+h1 {
+  /* padding-left: 10%; */
+  margin: auto;
+  width: min(80vw, 740px);
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+}
+
+#home p {
+  margin: auto;
+  width: min(80vw, 740px);
+  text-align: left;
 }
 
 #navbar {

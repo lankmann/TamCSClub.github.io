@@ -48,19 +48,35 @@ hedding but I disagree based on the way I am using it. -->
 	</div>
 
 	<!-- main part of the page -->
-	<main>
+	<main id="home">
+    <!-- <img id="background-img" src="Images/purple-voronoi.png" width=100% style="z-index: -1; position: absolute;"><img> -->
 		<section>
       <img id="logo" src="Images/redlogo.png" width=250 height=250>
       <br>
+      <h1 style="text-align: left;">About</h1>
       <br>
 			<p>
 				Hello and welcome to the Tam High Computer Science and Machine Learning Club homepage. If you are interested in learning
-				how to program, taking your skills farther, or creating amazing projects the Computer Science and Machine Learning club is for you. Don’t
-				worry if coding sounds intimidating or if you are basically a pro, everyone is welcome.
+				how to program, taking your skills farther, or creating amazing projects the Computer Science and Machine Learning club is 
+        for you. If you have zero experience coding or engineering, don't worry, the purpose of CSML club is to provide an 
+        environment ourside of school to learn and grow. 
 			</p>
+		</section>
+
+    <section>
+      <h1>Events</h1>
+      <br>
 			<p>
 				This year, we plan on hosting hackathons and game jams in which everyone will participate. If you have an amazing idea, 
         but are unsure of how to express it in code, our talented array of <a href='officers.html'>Club Officers</a> will help you make your CS dreams reality.
+			</p>
+		</section>
+
+    <section>
+      <h1>Meetings</h1>
+      <br>
+			<p>
+				The CSML club meets every Friday during lunch in room 207 (Ms. Kennedy's room). Our first official meeting will be held Sep. 24, two days after the club fair.
 			</p>
 		</section>
 
@@ -74,31 +90,54 @@ hedding but I disagree based on the way I am using it. -->
     </section>
 
     <section>
+      <br>
 			<sh>
 				Create Neural Networks
 			</sh>
       <br>
       <br>
-      <img src="Images/ae-labled-vis.png" style="width:80%;padding-bottom:1rem;" alt="Picture of autoencoder disign">
+      <img src="Images/ae-labled-vis.png" style="width: min(100%, 1000px); padding-bottom:1rem;" alt="Autoencoder architecture">
       <!-- <video width="80%" height="auto" controls>
         <source src="videos/mnist-ae-sneakpeak.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video> -->
     </section>
 
-		<section>
-			<sh>
-				Tech Talks
-			</sh>
-      <br>
-      <br>
-      <p>
-        We live in a community full of people who do interesting things resting to computers. 
-        My neighbor literally helped design the internet. Tech Talks are where we will 
-        bring interesting people to tell you about their jobs and experience
-      </p>
-    </section>
     <section>
+      <br>
+      <div style="display: flex; width: 800px; margin: auto">
+        <img src="Images/slime.png" width=295 height=255 style="border-radius: 5%; flex: 1;"><img>
+        <div style="padding-left: 50px;"> <!-- display: block; background-color: rgb(102, 67, 178);" -->
+          <sh>
+            Game Jams
+          </sh>
+          <br>
+          <p style="width: 400px; text-align: left; font-size: 1em;"> <!-- outline-style: solid; outline-color: rgb(150, 150, 150);" -->
+            Look forward to week long game jams where teams compete to make the best game. Again, we don't 
+            expect anyone to have experience in game developement. We'll teach you everything!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <br>
+      <div style="display: flex; width: 800px; margin: auto">
+        <img src="Images/island.png" width=300 height=250 style="border-radius: 5%; flex: 1;"><img>
+        <div style="padding-left: 50px;"> <!-- display: block; background-color: rgb(102, 67, 178);" -->
+          <sh>
+            Hackathons
+          </sh>
+          <br>
+          <p style="width: 400px; text-align: left; font-size: 1em;"> <!-- outline-style: solid; outline-color: rgb(150, 150, 150);" -->
+            A great way to explore and expand your computer science knowledge is to create small, fun projects. In a hackathon, participants split up into groups and collaborate on project that fits a given theme.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <br>
+      <br>
 			<sh>
 				Demo Days
 			</sh>
@@ -109,7 +148,7 @@ hedding but I disagree based on the way I am using it. -->
         This is intended to give a bit of purpose to all your hard work 
         through bragging to your parents.
       </p>
-    </section>
+    </section> -->
     
 
     <a id="Join-now">
@@ -120,10 +159,10 @@ hedding but I disagree based on the way I am using it. -->
 			  </sh>
         <br>
         <br>
-        <p>
+        <p style="text-align: center;">
           Join our remind by texting @tamcsclub to 81010.
         </p>
-        <p>
+        <p style="text-align: center;">
           Fill out a form about your interests and abilites
           <a href='https://docs.google.com/forms/d/e/1FAIpQLSdXuHgHrAoX1zGAPdWz_rN5e5biblSWnl250ZXF33dA13_dWg/viewform'>here</a>
         </p>
@@ -134,7 +173,7 @@ hedding but I disagree based on the way I am using it. -->
         </main>
         <!-- footer -->
         <section></section>
-        <div class="page-end">
+        <div class="page-end" style="display: block; background-color: #ffffff;">
             <a href="index.html">go home</a>
             <br>
             <a href="officers.html">officers</a>
